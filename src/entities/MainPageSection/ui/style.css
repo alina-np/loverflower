@@ -1,0 +1,159 @@
+.main {
+  background: url("./mainImg.png") no-repeat;
+  background-size: contain;
+}
+
+.main:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(180deg, rgba(4, 10, 10, 0) 0%, #040a0a 100%);
+}
+
+.main .container {
+  padding-top: 10%;
+  padding-bottom: 25%;
+}
+
+.main__desc {
+  margin-top: 5%;
+  text-align: center;
+  font-size: clamp(14px, 2vw, 20px);
+}
+
+.main .link {
+  position: relative;
+  z-index: 10;
+  margin: 50px auto 0;
+}
+
+.info {
+  height: 70%;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 50px;
+  text-align: right;
+}
+
+.main__adress .text-mint {
+  color: var(--color-mint);
+}
+
+.main__social {
+  width: -moz-min-content;
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+  padding: 10px 15px;
+}
+
+.main__social svg {
+  width: 30px;
+  height: 30px;
+}
+
+.info p {
+  margin-top: 5px;
+  color: var(--color-main);
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.main__icon {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 15px;
+}
+
+.main__tel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main__contacts .alick {
+  z-index: 2;
+}
+
+.main__green {
+  top: 31%;
+  left: 0;
+  width: 500px;
+  height: 300px;
+  border-radius: 500px;
+}
+
+.main__pink {
+  top: 20%;
+  right: 0;
+  width: 600px;
+  height: 250px;
+  border-radius: 500px;
+}
+
+.main__text {
+  width: 305px;
+  right: 0;
+  bottom: 15%;
+  transform: rotate(-10.255deg);
+}
+
+@media (max-width: 1300px) {
+  .info {
+    right: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+  .main__contacts,
+  .main__adress,
+  .main__social,
+  .main__icon a,
+  .main__tel {
+    display: none;
+  }
+  .info {
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+    height: 30px;
+  }
+  .main__pink {
+    right: -10%;
+    width: 45vw;
+    height: 300px;
+  }
+  .main__green {
+    left: 0;
+    width: 45vw;
+    height: 300px;
+  }
+  .main:after {
+    height: 50%;
+  }
+  .main .link {
+    margin-top: 30px;
+  }
+}

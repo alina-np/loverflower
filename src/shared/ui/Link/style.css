@@ -1,0 +1,81 @@
+.link {
+  width: 220px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-mint);
+  border: 0;
+  outline: 0;
+  color: var(--color-dark);
+  font-family: "Oswald";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.link:hover {
+  background: var(--color-darkpink);
+  color: var(--color-main);
+}
+
+.link-opacity {
+  width: 220px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid var(--color-main);
+  outline: 0;
+  color: var(--color-main);
+  font-family: "Oswald";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.link-opacity:hover {
+  background-color: var(--color-mint);
+  border: 0.5px solid var(--color-mint);
+  color: var(--color-dark);
+}
+
+.link-pink {
+  border-bottom: 1px solid var(--color-pink);;
+  color: var(--color-pink);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  transition: 0.4s;
+}
+.link-pink:hover {
+  border-bottom: 1px solid transparent;
+}
+
+.link-white {
+  color: var(--color-main);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  transition: 0.4s;
+}
+.link-white:hover {
+  color: var(--color-mint);
+}
+
+.link-back {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  transition: 0.4s;
+}
+.link-back:hover {
+  color: var(--color-mint);
+}

@@ -1,0 +1,1 @@
+export { MainPageSocial } from "./ui/MainPageSocial";

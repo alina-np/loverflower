@@ -1,0 +1,1 @@
+export { FiltrPrice } from "./ui/FiltrPrice";

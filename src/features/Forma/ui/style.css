@@ -1,0 +1,274 @@
+.forma__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.forma__title {
+  position: relative;
+  z-index: 2;
+  line-height: 100%;
+}
+
+.forma__title span {
+  margin-left: 20%;
+}
+
+.forma__top p {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+.forma__top p:before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-mint);
+}
+
+.forma__bottom {
+  display: flex;
+}
+
+.form:not(.formOrder__forma) {
+  position: relative;
+  z-index: 2;
+  width: 445px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.forma__text {
+  position: relative;
+  z-index: 2;
+  left: 20%;
+  margin-top: 5%;
+  transform: rotate(-18deg);
+  color: #000;
+}
+
+.form:not(.formOrder__forma) .btn {
+  width: 100%;
+}
+
+.form p {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 10px;
+  letter-spacing: 0.02em;
+}
+
+.form a {
+  color: var(--color-mint);
+}
+
+.formCall__forma.form {
+  width: 100%;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  height: 60px;
+  border: 1px solid var(--color-mint);
+  background-color: transparent;
+  padding-left: 10px;
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.input::-moz-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.input::placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.input::-webkit-input-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.input::-ms-input-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #395959;
+  -webkit-box-shadow: 0 0 0px 40rem #0f2222 inset;
+}
+
+.textarea {
+  height: 120px;
+  padding-top: 10px;
+  resize: none;
+}
+
+.textarea::-moz-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.textarea::placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.textarea::-webkit-input-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.textarea::-ms-input-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.form > div {
+  position: relative;
+}
+
+.form__error {
+  position: absolute;
+  font-size: 12px;
+  text-transform: none;
+}
+
+p.successSend {
+  display: none;
+  position: absolute;
+  margin-top: 0;
+  bottom: 35px;
+  opacity: 0;
+  color: var(--color-pink);
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+p.successSend.visible {
+  display: block;
+  opacity: 1;
+}
+
+.formCall .successSend {
+  width: 100%;
+  bottom: 20px;
+  text-align: center;
+}
+
+.formOrder {
+  margin: 50px 0 100px;
+}
+
+.formOrder__forma {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.formOrder__forma > div {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formOrder__forma .btn {
+  margin: 20px 0;
+}
+
+@media (max-width: 1510px) {
+  .formCall .successSend {
+    bottom: 35px;
+  }
+  
+}
+
+@media (max-width: 850px) {
+  .form {
+    width: 100%;
+  }
+  .forma__text {
+    position: absolute;
+    z-index: -1;
+  }
+  .modal__content {
+    max-width: 80%;
+    min-width: 350px;
+  }
+  .form:not(.formOrder__forma) {
+    width: 100%;
+  }
+  p.successSend {
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .forma__top {
+    flex-direction: column;
+    gap: 75px;
+  }
+  .formOrder__forma > div {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .order__text, .forma__text {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  p.successSend {
+    bottom: 35px;
+  }
+}
+
+@media (max-width: 405px) {
+  p.successSend {
+    bottom: 45px;
+  }
+}

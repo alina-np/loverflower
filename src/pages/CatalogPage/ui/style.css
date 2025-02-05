@@ -1,0 +1,323 @@
+.catalog {
+  position: relative;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.catalogContainer {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.catalogMain {
+  width: 100%;
+}
+
+.catalogList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 60px 30px;
+  padding-bottom: 100px;
+}
+
+.mark {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 300;
+  color: var(--color-dark);
+}
+
+.new {
+  background-color: var(--color-pink);
+}
+
+.sale {
+  background-color: var(--color-green);
+}
+
+.hit {
+  background-color: var(--color-red);
+}
+
+.catalog__flower,
+.bouquet__flower {
+  position: absolute;
+}
+
+.catalog__flower-one {
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.catalog__flower-two {
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.catalog__green-two {
+  left: -50px;
+  width: 300px;
+  height: 200px;
+  bottom: -50px;
+}
+
+.catalog__green-three {
+  left: 30%;
+  width: 40%;
+  height: 50px;
+  bottom: 0;
+  transform: none;
+}
+
+.catalog__pink-one {
+  right: 0;
+  width: 400px;
+  height: 400px;
+  top: -100px;
+}
+
+.catalog__pink-two {
+  left: -50px;
+  width: 400px;
+  height: 400px;
+  top: 100px;
+  z-index: -2;
+}
+
+.catalog__pink-three {
+  left: 0;
+  width: 300px;
+  height: 300px;
+  top: 300px;
+}
+
+.catalog__pink-four {
+  width: 300px;
+  height: 400px;
+  right: 0;
+  bottom: -50px;
+}
+
+.bouquet {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.bouquetInfo {
+  display: flex;
+  gap: 30px;
+}
+
+.bouquetInfo__img {
+  width: 350px;
+}
+
+.bouquetInfo__title {
+  margin: 20px 0;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: clamp(20px, 3.5vw, 40px);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.bouquetInfo__price {
+  color: var(--color-mint);
+  font-weight: 700;
+  font-size: clamp(18px, 2.5vw, 30px);
+  letter-spacing: 0.04em;
+}
+
+.bouquetInfo__info {
+  margin: 20px 0;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.bouquetAdditional {
+  margin-top: 80px;
+}
+
+.bouquetAdditional__title {
+  text-align: center;
+}
+
+.bouquetAdditional__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 100px 0;
+}
+
+.bouquetAdditional__list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 35px;
+  border-radius: var(--radius);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+}
+
+.bouquetLike__title {
+  font-size: clamp(18px, 2.5vw, 30px);
+}
+
+.bouquetLike > div {
+  margin: 100px 0;
+}
+
+.popular > img {
+  position: absolute;
+  top: 37%;
+  left: -130px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.popular > img:hover {
+  transform: scale(1.1);
+}
+
+.popular > img:nth-of-type(2) {
+  left: unset;
+  right: -100px;
+}
+
+.bouquet__flower-one {
+  right: 0;
+  top: 150px;
+  z-index: -1;
+}
+
+.bouquet__green-one {
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.bouquet__green-two {
+  left: -200px;
+  width: 300px;
+  height: 200px;
+  bottom: 150px;
+}
+
+.bouquet__green-three {
+  left: 30%;
+  width: 40%;
+  height: 50px;
+  bottom: 0;
+  transform: none;
+}
+
+.bouquet__green-four {
+  left: 40%;
+  width: 70%;
+  height: 120px;
+  bottom: 100px;
+  transform: rotate(-10deg);
+}
+
+.bouquet__pink-one {
+  right: 0;
+  width: 200px;
+  height: 400px;
+  top: -100px;
+}
+
+.bouquet__pink-two {
+  left: -50px;
+  width: 400px;
+  height: 400px;
+  top: 7%;
+  z-index: -2;
+}
+
+.bouquet__pink-three {
+  left: 0;
+  width: 300px;
+  height: 300px;
+  top: 19%;
+}
+
+.bouquet__pink-four {
+  width: 300px;
+  height: 500px;
+  right: -50px;
+  bottom: 200px;
+  z-index: -2;
+}
+
+@media (max-width: 1024px) {
+  .catalogContainer {
+    flex-direction: column;
+  }
+  .catalogFiltr {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .catalogFiltr > div {
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .catalogFiltr__btn.btn {
+    width: 250px;
+  }
+  .catalog__flower {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalogFiltr > div,
+  .catalogFiltr__btn.btn {
+    width: 44%;
+  }
+  .bouquetInfo {
+    flex-direction: column;
+  }
+  .bouquetInfo__img {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .bouquetInfo__info {
+    margin: 10px 0;
+  }
+  .bouquetAdditional__list,
+  .bouquetLike > div {
+    margin: 50px 0;
+  }
+  .bouquet__flower-one {
+    width: 60%;
+    top: 450px;
+  }
+}
+
+@media (max-width: 550px) {
+  .catalog__flower,
+  .catalogFiltr > div,
+  .catalogFiltr__btn.btn {
+    width: 100%;
+  }
+}

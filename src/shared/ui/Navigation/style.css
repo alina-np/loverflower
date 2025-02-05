@@ -1,0 +1,11 @@
+.nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+
+.nav__item {
+  white-space: nowrap;
+}
+

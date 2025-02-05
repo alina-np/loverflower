@@ -1,0 +1,1 @@
+export { FiltrCategory } from "./ui/FiltrCategory";

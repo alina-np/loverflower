@@ -1,0 +1,1 @@
+export { MainPagePopular } from "./ui/MainPagePopular";

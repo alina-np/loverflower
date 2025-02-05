@@ -1,0 +1,1 @@
+export { MainPageForma } from "./ui/MainPageForma";

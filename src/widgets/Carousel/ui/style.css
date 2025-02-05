@@ -1,0 +1,17 @@
+.slick-track {
+  margin-left: -15px !important;
+}
+
+.slick-slide {
+  padding: 0 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+@media (max-width: 1368px) {
+  .slick-slider > img {
+    display: none;
+  }
+}
